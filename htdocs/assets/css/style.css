@@ -1,0 +1,279 @@
+/* Estilos para los cards */
+.card {
+    width: 100%;
+    max-width: 300px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: 1px solid #ddd; /* Borde para visualizar mejor los cards */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.card .btn {
+    margin-top: auto;
+}
+
+/* Ajustes para cuando hay un solo card */
+.row:has(.col-md-6:only-child) {
+    justify-content: center;
+}
+
+.row:has(.col-md-6:only-child) .col-md-6 {
+    max-width: 50%;
+}
+
+/* Otros estilos existentes */
+.form-container {
+    background-color: rgb(97, 169, 6);
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container-register {
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container-second {
+    color: white;
+    background-color: rgb(33, 37, 41);
+}
+
+.text-form-container {
+    color: rgb(107, 156, 15);
+    text-decoration: none;
+}
+
+.form-container-dark {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+.form-container-dark:hover {
+    background-color: rgb(33, 37, 41);
+    color: white;
+}
+
+.btn-formulario {
+    background-color: rgb(107, 156, 15);
+    color: rgb(33, 37, 41);
+}
+
+.btn-formulario:hover {
+    background: rgb(33, 37, 41);
+    color: rgb(107, 156, 15);
+}
+
+.btn-first-color {
+    background-color: rgb(107, 156, 15);
+    color: rgb(33, 37, 41);
+}
+
+.btn-first-color:hover {
+    background-color: rgb(107, 156, 15);
+    color: rgb(33, 37, 41);
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.btn-probike {
+    color: rgb(107, 156, 15);
+}
+
+.btn-second-color {
+    background-color: rgb(33, 37, 41);
+    color: rgb(167, 227, 55);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-second-color:hover {
+    background-color: rgb(33, 37, 41);
+    color: rgb(107, 156, 15);
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.text-form-container-dark {
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+
+.text-form-container:hover {
+    color: rgb(33, 37, 41);
+}
+
+.left-section .nav .collapse ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.left-section .nav .collapse ul li a:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.cart-container a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-container {
+    margin-right: auto;
+}
+
+.cart-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nav-container {
+    margin-left: auto;
+}
+
+@font-face {
+    font-family: 'CrackedWide';
+    src: url('../fonts/Cracked-Wide.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CrackedNarrow';
+    src: url('../fonts/Cracked-Narrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CrackedNarrowItalic';
+    src: url('../fonts/Cracked-NarrowItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.xplora {
+    font-family: 'CrackedWide', sans-serif;
+    font-size: 30px;
+    color: rgb(107, 156, 15);
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pagination .active .page-link {
+    background-color: rgb(107, 156, 15);
+    border-color: rgb(107, 156, 15);
+    color: white;
+}
+
+.content {
+    background-image: url('../imagenes/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.card-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Todas las cards tendrán la misma altura */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.card-admin img {
+    width: 100%; /* Ajusta la imagen al ancho del card */
+    height: 200px; /* Mantiene una altura uniforme */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+}
+
+.card-body-admin {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    flex-grow: 1; /* Hace que el contenido del card crezca uniformemente */
+}
+
+.card-text-admin {
+    flex-grow: 1; /* Expande la descripción del producto para mantener el tamaño */
+}
+
+.card-admin .btn {
+    margin-top: auto; /* Asegura que el botón de "Añadir al carrito" siempre esté en la parte inferior */
+}
+
+@media (max-width: 768px) {
+    /* Ajustar la estructura de columnas */
+    .col-md-6, .col-md-4, .col-md-8, .col-md-3, .col-md-2 {
+        width: 100% !important; /* Que ocupen todo el ancho en móviles */
+    }
+
+    /* Ocultar elementos secundarios para mejorar la experiencia */
+    aside {
+        display: none; /* Oculta los asides en móviles */
+    }
+
+    /* Ajustar el tamaño del texto para móviles */
+    body, p, h1, h2, h3, h4, h5, h6 {
+        font-size: 1rem;
+    }
+
+    /* Hacer que el footer siempre se vea bien */
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Asegurar que las imágenes sean responsivas */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
