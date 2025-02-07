@@ -58,10 +58,10 @@ elseif (isset($_SESSION['carrito']) && is_array($_SESSION['carrito'])) {
         if (isset($_SESSION['carrito'][$producto_id])) {
             $_SESSION['carrito'][$producto_id]['cantidad'] = $cantidad;
         } else {
-            // Opcional: si el producto no existe, se podría agregar (dependiendo de la lógica de tu sitio)
+            // Opcional: si el producto no existe, se puede agregar.
             $_SESSION['carrito'][$producto_id] = [
-                'nombre'   => 'Producto Desconocido', // O bien recuperarlo de la BD
-                'precio'   => 0,                      // Se debe definir el precio si es posible
+                'nombre'   => 'Producto Desconocido', 
+                'precio'   => 0,                     
                 'cantidad' => $cantidad
             ];
         }
